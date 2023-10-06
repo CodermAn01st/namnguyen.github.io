@@ -1,0 +1,146 @@
+/* set cac gia tri cho body gom mau, kieu chu, co chu duoc dung nhieu */
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #193549;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+/* css cho phần container gồm màu, độ rộng tối đa căn giữa và có display = block */
+.resume-container {
+  background-color: #FFFFFF;
+  max-width: 900px;
+  margin: 0 auto;
+  display: block;
+}
+/* doan code chạy khi các thiết bị khác có độ rộng tối thiểu là 768 */
+@media (min-width: 768px) {
+  .resume-container {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+  }
+}
+/* css cho phần side-bar bên trái*/
+.resume-container .left-sidebar {
+  background-color: #F4F4F4;
+  color: #444441;
+  padding: 60px 45px;
+}
+/* chạy khi màn hình của thiết bị có độ rộng tối thiểu 768px */
+@media (min-width: 768px) {
+  .resume-container .left-sidebar {
+    flex:1;
+    margin-right: 45px;
+  }
+}
+/* css cho phần ảnh  */
+.resume-container .left-sidebar img {
+  max-width: 200px;
+  max-height: 200px;
+  margin: 0 auto 60px;
+  display: block;
+}
+.resume-container .left-sidebar .heading {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 1.4em;
+  padding: 10px 5px;
+  border-radius: 25px;
+  color: #FFFFFF;
+  background-color: #444440;
+  text-align: center;
+  margin: 40px 0 20px;
+}
+
+.resume-container .left-sidebar .contact {
+  font-style: normal;
+  font-size: 1em;
+  line-height: 1.7;
+  margin: 0 0 15px;
+}
+.resume-container .left-sidebar .contact i {
+  color: #444441;
+}
+
+.resume-container .left-sidebar .course {
+  font-size: 1.2em;
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+.resume-container .left-sidebar .time {
+  margin: 0 0 30px;
+}
+.resume-container .left-sidebar ul.skills {
+  padding: 0;
+  margin-left: 20px;
+}
+.resume-container .left-sidebar ul.skills li {
+  line-height: 3;
+}
+.resume-container .main-body {
+  padding: 60px 30px;
+  flex: 2;
+  color: #4C4D4F;
+  background-color: #FFFFFF;
+}
+.resume-container .main-body h1 {
+  font-size: 3.5em;
+  font-weight: 400;
+  color: #333132;
+  margin: 30px 0 0;
+}
+.resume-container .main-body .designation {
+  margin: 0 0 80px;
+  font-size: 1.5em;
+  letter-spacing: 2px;
+}
+.resume-container .main-body h2.secondary {
+  text-transform: uppercase;
+  color: #322D2E;
+  font-size: 1.5em;
+  font-weight: 900;
+}
+.resume-container .main-body h2.secondary i {
+  color: #EA4335;
+  font-size: 1.7em;
+}
+/* css cho phần job-info để các phần tử nằm cùng hàng  */
+.resume-container .main-body .job-info {
+  display: flex;
+  padding: 5px;
+  margin-top: 45px;
+  align-items: center;
+  background-color: #ccc;
+  justify-content: space-between;
+  border: 1px solid #085c58b3;
+  border-radius: 4px;
+}
+
+.resume-container .main-body .job-info p {
+  font-size: 1.1em;
+  color: #4C4D4F;
+  margin: 0;
+}
+.resume-container .main-body h3 {
+  color: #3D3D3E;
+  font-weight: 900;
+}
+.resume-container .main-body p.job-detail {
+  line-height: 1.7;
+  font-size: 1em;
+}
+.resume-container .main-body .ref {
+  background-color: #EA4335;
+  display: block;
+}
+.resume-container .main-body .ref .col {
+  background-color: #DEE1E6;
+  padding: 20px;
+  border: 1px solid #ebf0f7;
+}
+
+.resume-container .main-body .ref .col p {
+  font-size: 0.9em;
+}
